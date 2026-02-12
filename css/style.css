@@ -498,6 +498,27 @@ footer {
     .center-text {
         display: none !important;
     }
+
+    /* Works Section Responsive */
+    .works-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /* 3D Book Responsive */
+    .books-3d-container {
+        height: 350px !important;
+        margin-bottom: 2rem;
+        transform: scale(0.9);
+    }
+
+    .text-block.book-text {
+        padding-top: 1rem;
+    }
+
+    .poem-en {
+        font-size: 1.2rem;
+    }
 }
 
 /* SOCIAL ICONS */
