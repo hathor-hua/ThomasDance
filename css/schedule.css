@@ -1,0 +1,81 @@
+
+/* Schedule Box Styling */
+.schedule-box {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.05); /* Very subtle semi-transparent bg */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap; /* Stack on mobile */
+    gap: 2rem;
+}
+
+.day-column {
+    flex: 1; /* Side by side on desktop */
+    min-width: 250px;
+}
+
+.day-column h4 {
+    color: var(--color-neon-blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.day-column .location {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-family: var(--font-tc);
+}
+
+.day-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.day-column li {
+    font-family: var(--font-tc);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    line-height: 1.4;
+    color: rgba(255,255,255,0.9);
+}
+
+.day-column li strong {
+    color: white;
+    display: inline-block;
+    min-width: 110px; /* Align times */
+}
+
+.day-column li.sub-text {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: -0.3rem; /* Tighter to previous item */
+    margin-left: 110px; /* Align with content */
+    font-style: italic;
+}
+
+/* Mobile adjustments for Schedule */
+@media screen and (max-width: 900px) {
+    .schedule-box {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.2rem;
+    }
+    
+    .day-column li strong {
+        min-width: 100px;
+    }
+    
+    .day-column li.sub-text {
+        margin-left: 0; /* Don't indent on mobile */
+        display: block;
+        margin-top: 0;
+    }
+}
