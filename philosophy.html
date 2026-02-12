@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy | Thomas Dance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific overrides for Philosophy Page */
+        .page-header {
+            padding-top: 15vh;
+            padding-bottom: 5vh;
+            text-align: center;
+            background-color: var(--color-light);
+            color: var(--color-dark);
+        }
+
+        .page-header h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .book-entry {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            align-items: center;
+        }
+
+        .book-entry:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .book-cover {
+            width: 300px;
+            height: 450px;
+            background: #ddd;
+            flex-shrink: 0;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-info h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-info .year {
+            color: #666;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .book-info p {
+            font-family: var(--font-tc);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .poem-selection {
+            background-color: var(--color-dark);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .poem-card {
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .book-entry,
+            .book-entry:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .book-cover {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 2/3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">THOMAS DANCE</div>
+        <div class="nav-links">
+            <a href="index.html#dance">MOVE</a>
+            <a href="index.html#soul" class="active">SOUL</a>
+            <a href="index.html#wear">WEAR</a>
+            <a href="index.html#about">ABOUT</a>
+        </div>
+        <a href="https://lin.ee/wdTSqmTt" target="_blank" class="cta-btn">BOOK NOW</a>
+    </nav>
+
+    <!-- Header -->
+    <div class="page-header">
+        <h1>Words & Soul</h1>
+        <p>The philosophical works of Tamás Zsolnai</p>
+    </div>
+
+    <!-- Books Section -->
+    <section class="panel light-mode">
+        <div class="book-container">
+            <!-- Book 1 -->
+            <div class="book-entry">
+                <div class="book-cover"
+                    style="background-image: url('images/book1.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <div class="book-info">
+                    <h2>Elfojtott szavak</h2>
+                    <span class="year">被壓抑的話語 (2022)</span>
+                    <p>這是一本關於沉默與吶喊的書。當我們無法用言語表達時，身體會代替我們說話。這本書探索了那些被壓抑在潛意識深處的情緒，以及如何透過舞蹈與書寫將其釋放。</p>
+                    <a href="#" class="action-btn outline">了解更多</a>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-entry">
+                <div class="book-cover"
+                    style="background: #e0e0e0; display: flex; align-items: center; justify-content: center; color: #999;">
+                    Cover Image</div>
+                <div class="book-info">
+                    <h2>Eltitkolt gondolatok</h2>
+                    <span class="year">隱藏的想法 (2024)</span>
+                    <p>我們每個人都有一個秘密花園，種植著不願示人的想法。Tamás 在這本書中赤裸地剖析人性中的脆弱與渴望，邀請讀者誠實面對自己最深層的恐懼。</p>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-entry">
+                <div class="book-cover"
+                    style="background: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                    Cover Image</div>
+                <div class="book-info">
+                    <h2>Sérülések Iskolája</h2>
+                    <span class="year">傷痛學校 (2024)</span>
+                    <p>痛苦是最好的老師。這本書不是關於如何避免受傷，而是關於如何在傷痛中成長，並將其轉化為生命的力量與藝術的養分。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poems Section -->
+    <section class="poem-selection">
+        <h2 class="section-title italic">Select Poems</h2>
+        <div style="height: 3rem;"></div>
+
+        <div class="poem-card">
+            <p class="poem-en"
+                style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-style: italic; margin-bottom: 1.5rem;">
+                "Wherever you walk on your path, stop, bend down and stroke the ground. Remember your family, your
+                friends, your acquaintances, the entire humanity strolls on it. You are always connected with
+                everybody."
+            </p>
+            <p class="poem-cn" style="font-family: 'Noto Sans TC'; font-weight: 300; opacity: 0.8; line-height: 1.8;">
+                無論行至何方，請駐足，俯身，輕撫足下的大地。請銘記，你的家人、摯友、與故舊，乃至全人類，皆在此漫步。你與眾人，靈魂相繫，永不分離。
+            </p>
+        </div>
+
+        <div class="poem-card">
+            <p class="poem-en"
+                style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-style: italic; margin-bottom: 1.5rem;">
+                "To dance is to reach for a word that doesn't exist, to sing the hearts of a thousand generations so
+                they can finally rest."
+            </p>
+            <p class="poem-cn" style="font-family: 'Noto Sans TC'; font-weight: 300; opacity: 0.8; line-height: 1.8;">
+                舞蹈，是為了觸碰那個不存在的詞彙；是為了吟唱千世萬代的心聲，好讓其終得安息。
+            </p>
+        </div>
+
+        <a href="index.html#contact" class="action-btn">聯繫作者 (Contact)</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <h2>ZSOLNAI TAMÁS</h2>
+                    <p>Dancer. Author. Creator.</p>
+                </div>
+                <div class="connect">
+                    <h3>Connect</h3>
+                    <div class="socials">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Tamás Zsolnai. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

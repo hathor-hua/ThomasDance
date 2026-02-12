@@ -41,6 +41,27 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#navbar .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+#navbar .nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar .nav-links a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#navbar .nav-links a:hover,
+#navbar .nav-links a.active {
+    color: var(--color-neon-pink);
+}
+
 #navbar .cta-btn:hover {
     background: white;
     color: black;
