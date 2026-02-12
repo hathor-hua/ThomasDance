@@ -500,37 +500,22 @@ footer {
     }
 }
 
-/* ABOUT SECTION */
-.social-block {
-    background: rgba(0, 0, 0, 0.05);
+/* SOCIAL ICONS */
+.icon-link {
+    font-size: 2rem;
+    color: var(--color-dark);
+    transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+    color: var(--color-neon-pink);
+    transform: scale(1.2);
+}
+
+/* STORY SECTION */
+.story-content {
+    background: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     border-radius: 8px;
-}
-
-.social-links-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-link-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: transform 0.2s;
-    color: var(--color-dark);
-}
-
-.social-link-item:hover {
-    transform: translateX(10px);
-    color: var(--color-neon-pink);
-}
-
-.social-label {
-    font-weight: 900;
-    min-width: 100px;
-    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
