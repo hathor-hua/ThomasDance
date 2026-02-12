@@ -1,11 +1,12 @@
 :root {
     --color-dark: #1A1A1A;
     --color-light: #F5F5F0;
-    --color-neon-blue: #00F3FF;
-    --color-neon-pink: #FF0055;
+    --color-neon-blue: #e0e0e0;
+    /* Changed from neon blue to premium grey/white */
+    --color-neon-pink: #ff0055;
     --color-rose: #C08497;
-    --font-sans: 'Montserrat', sans-serif;
     --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Montserrat', sans-serif;
     --font-tc: 'Noto Sans TC', sans-serif;
 }
 
@@ -32,12 +33,14 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    background-color: #000000;
+    transition: all 0.3s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -58,11 +61,13 @@ a {
 }
 
 #navbar .nav-links a {
-    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
     /* Slightly bolder links */
-    transition: color 0.3s ease;
-    text-transform: uppercase;
+    transition: color 0.3s;
     letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 #navbar .nav-links a:hover,
@@ -278,10 +283,22 @@ a {
 
 .action-btn {
     display: inline-block;
-    padding: 1rem 2rem;
-    background: var(--color-neon-blue);
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.action-btn:hover {
+    background-color: white;
     color: black;
-    font-weight: 900;
+    transform: translateY(-2px);
 }
 
 .action-btn.outline {
