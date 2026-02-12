@@ -467,10 +467,19 @@ footer {
     .split .btn-outline {
         font-size: 14px !important;
         padding: 10px 20px !important;
-        width: 100%;
+        width: auto;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .split .btn:hover {
         background: white;
         color: black;
-        border: none;
+    }
+
+    .split .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
 
     /* CTA Button Mobile */
