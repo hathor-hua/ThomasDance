@@ -42,24 +42,33 @@ a {
 }
 
 #navbar .logo {
-    font-weight: 900;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    font-weight: 900 !important;
+    font-size: 1.8rem;
+    /* Made slightly larger */
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    /* Ensure font matches */
+    color: white;
 }
 
 #navbar .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    /* Increased gap */
 }
 
 #navbar .nav-links a {
-    font-weight: 500;
-    transition: color 0.3s;
+    font-weight: 600;
+    /* Slightly bolder links */
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #navbar .nav-links a:hover,
 #navbar .nav-links a.active {
-    color: var(--color-neon-pink);
+    color: #FF0055 !important;
+    /* Explicit neon pink */
 }
 
 #navbar .cta-btn:hover {
