@@ -18,6 +18,7 @@
 body {
     font-family: var(--font-sans);
     background: var(--color-dark);
+    color: var(--color-light);
     overflow-x: hidden;
 }
 
@@ -118,12 +119,12 @@ a {
 
 /* IMAGES - FORCE NEW PATHS */
 .split.left {
-    background-image: url('../images/z1.jpg');
+    background-image: url('../images/unleash.jpg');
     filter: brightness(0.95);
 }
 
 .split.right {
-    background-image: url('../images/book1.jpg');
+    background-image: url('../images/Reflect.png');
     filter: sepia(0.2);
 }
 
@@ -284,12 +285,12 @@ a {
 
 /* IMAGES - SECTIONS */
 .visual-block.placeholder-dance {
-    background-image: url('../images/zumba.jpg');
+    background-image: url('../images/Moveyourbody.jpg');
     box-shadow: 20px 20px 0 rgba(0, 243, 255, 0.2);
 }
 
 .visual-block.placeholder-book {
-    background-image: url('../images/book1.jpg');
+    background-image: url('../images/feedyoursoul.jpg');
     box-shadow: 20px 20px 0 rgba(192, 132, 151, 0.2);
     filter: sepia(0.1);
 }
@@ -313,15 +314,15 @@ a {
 }
 
 .gallery-item:nth-child(1) .placeholder-wear {
-    background-image: url('../images/s2.jpg');
+    background-image: url('../images/wear1.jpg');
 }
 
 .gallery-item:nth-child(2) .placeholder-wear {
-    background-image: url('../images/s3.jpg');
+    background-image: url('../images/wear2.jpg');
 }
 
 .gallery-item:nth-child(3) .placeholder-wear {
-    background-image: url('../images/s4.jpg');
+    background-image: url('../images/wear3.jpg');
 }
 
 /* FOOTER */
