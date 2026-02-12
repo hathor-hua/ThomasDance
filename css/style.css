@@ -473,6 +473,20 @@ footer {
         border: none;
     }
 
+    /* CTA Button Mobile */
+    .cta-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .cta-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
     /* Content Sections */
     .grid-2 {
         display: block !important;
