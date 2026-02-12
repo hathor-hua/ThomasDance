@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Dance | Soul & Rhythm</title>
+    <title>Thomas (Tamás Zsolnai) | The Choreographer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap"
@@ -22,9 +22,10 @@
 
     <!-- Navigation -->
     <nav id="navbar">
-        <div class="logo">THOMAS DANCE</div>
+        <div class="logo">Thomas (Tamás Zsolnai) | The Choreographer</div>
         <div class="nav-links">
             <a href="#dance" class="active">MOVE</a>
+            <a href="#works">WORKS</a>
             <a href="#soul">SOUL</a>
             <a href="#wear">WEAR</a>
             <a href="#about">ABOUT</a>
@@ -53,7 +54,8 @@
     <!-- NEW SECTION: The Poem -->
     <section id="poem-banner">
         <div class="poem-content">
-            <p class="poem-en">"Wherever you walk on your path, stop, bend down and stroke the ground. Remember your
+            <p class="poem-en scroll-reveal">"Wherever you walk on your path, stop, bend down and stroke the ground.
+                Remember your
                 family, your friends, your acquaintances, the entire humanity strolls on it. You are always connected
                 with everybody."</p>
             <p class="poem-cn">無論行至何方，請駐足，俯身，輕撫足下的大地。請銘記，你的家人、摯友、與故舊，乃至全人類，皆在此漫步。你與眾人，靈魂相繫，永不分離。</p>
@@ -102,10 +104,50 @@
 
                     <a href="https://lin.ee/wdTSqmTt" target="_blank" class="action-btn">查看最新課表 & 報名 (LINE)</a>
                 </div>
-                <div class="visual-block placeholder-dance">
+                <div class="visual-block placeholder-dance video-bg-container">
+                    <!-- Video Background -->
+                    <div class="video-overlay"></div>
+                    <div class="video-text">SHOWREEL LOADING...</div>
+                    <!-- Uncomment when video is available
+                    <video autoplay loop muted playsinline class="bg-video">
+                        <source src="images/showreel.mp4" type="video/mp4">
+                    </video> 
+                    -->
                     <!-- DIRECT IMAGE INJECTION TO BYPASS CSS CACHE -->
                     <img src="images/Moveyourbody.jpg" alt="Zumba Shout"
                         style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: WORKS (Choreography Portfolio) -->
+    <section id="works" class="panel dark-mode">
+        <div class="container">
+            <h2 class="section-title">CHOREOGRAPHY</h2>
+            <p class="subtitle">Signature Works</p>
+
+            <div class="works-grid">
+                <!-- Video 1 -->
+                <div class="work-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Hungarian Remix</span>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="work-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Modern Pop</span>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="work-item">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Lyrical Flow</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,12 +157,26 @@
     <section id="soul" class="panel light-mode">
         <div class="container">
             <h2 class="section-title serif">Feed Your Soul</h2>
-            <p class="subtitle">Author / Poet / Thinker</p>
+            <p class="subtitle">Choreographer | Dancer | Poet</p>
 
             <div class="grid-2 reverse">
-                <div class="visual-block placeholder-book">
-                    <!-- Placeholder for Book Image -->
-                    <div class="visual-text">BOOK COVER ART</div>
+                <div class="visual-block books-3d-container">
+                    <!-- 3D Book Presentation -->
+                    <div class="book-stage">
+                        <div class="book-card book-1">
+                            <div class="book-cover"><img src="images/book1.jpg" alt="Book 1"></div>
+                        </div>
+                        <div class="book-card book-2">
+                            <div class="book-cover"
+                                style="background-color: #4a4a4a; color: white; display:flex; align-items:center; justify-content:center;">
+                                Book 2</div>
+                        </div>
+                        <div class="book-card book-3">
+                            <div class="book-cover"
+                                style="background-color: #333; color: white; display:flex; align-items:center; justify-content:center;">
+                                Book 3</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-block">
                     <h3>"Words are the dance of the mind."</h3>
@@ -175,7 +231,20 @@
                     <h3>Tamás Zsolnai</h3>
                     <div class="roles"
                         style="font-size: 1.5rem; font-weight: 300; margin-bottom: 2rem; color: var(--color-neon-blue);">
+                        style="font-size: 1.5rem; font-weight: 300; margin-bottom: 2rem; color:
+                        var(--color-neon-blue);">
                         Choreographer | Dancer | Poet
+                    </div>
+
+                    <div class="bio-text-cn" style="font-weight: 300; line-height: 1.8; margin-bottom: 2rem;">
+                        <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #fff;">「我不只教你如何跳舞，我教你如何用身體寫詩。」</p>
+
+                        <p>來自匈牙利，帶著前國標舞世界冠軍的精準基因，與三本心靈著作的文學底蘊。Tamás 的編舞不僅是動作的堆疊，更是一場關於「靈魂解放」的敘事。</p>
+
+                        <p>作為一位 Choreographer，他擅長將東歐的古典律動與現代流行的靈魂節奏融合，創造出極具視覺衝擊力且富有感染力的作品。他曾入選國際 Zumba® Presenter
+                            Finalist，並持續在亞洲傳遞「動態美學」的核心價值。</p>
+
+                        <p>在他的鏡頭與節奏下，每一吋肌肉的震盪，都是為了表達那些說不出口的話語。</p>
                     </div>
 
                     <div style="margin-top: 2rem; margin-bottom: 2rem;">
@@ -198,7 +267,7 @@
                                 <i class="fab fa-youtube"></i>
                             </a>
                             <a href="https://twitter.com/zutomba" target="_blank" class="icon-link">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-x-twitter"></i>
                             </a>
                         </div>
                     </div>
@@ -213,14 +282,32 @@
             <div class="footer-content">
                 <div class="brand">
                     <h2>ZSOLNAI TAMÁS</h2>
-                    <p>Dancer. Author. Creator.</p>
+                    <p>Choreographer | Dancer | Poet</p>
                 </div>
                 <div class="connect">
                     <h3>Connect</h3>
                     <div class="socials">
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">TikTok</a>
+                        <div class="social-icons" style="display: flex; gap: 1rem;">
+                            <a href="https://www.facebook.com/thomasdancezumba" target="_blank"
+                                class="icon-link footer-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thomasdancezumba" target="_blank"
+                                class="icon-link footer-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@thomasdancezumba" target="_blank"
+                                class="icon-link footer-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://twitter.com/zutomba" target="_blank" class="icon-link footer-icon">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@thomasdancezumba" target="_blank"
+                                class="icon-link footer-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                     <a href="https://line.me/R/ti/p/@yourlineid" class="line-btn">加入官方 LINE</a>
                 </div>
